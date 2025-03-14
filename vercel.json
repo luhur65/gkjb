@@ -7,8 +7,7 @@
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
         { "src": "/(.*)", "dest": "/api/index.php" },
-        { "src": "/assets/(.*)", "dest": "/public/"},
-        { "src": "/(.*)", "dest": "/public/$1"}
+        { "src": "/(css|js|images|fonts|build|storage)/(.*)", "dest": "/public/$1/$2" }
     ],
     "public": true,
     "outputDirectory": "public",
