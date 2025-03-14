@@ -15,6 +15,8 @@ class TrustHosts extends Middleware
     {
         return [
             $this->allSubdomainsOfApplicationUrl(),
+            '^gkjb\.vercel\.app$', // Ganti dengan domain Vercel kamu
+            '^localhost$', // Untuk pengembangan lokal
         ];
     }
 }
